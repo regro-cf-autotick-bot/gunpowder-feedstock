@@ -27,6 +27,9 @@ requirements:
     - scikit-image
     - scipy
     - tqdm
+    - zarr
+    - networks
+    - funlib.geometry
 
 test:
   imports:
