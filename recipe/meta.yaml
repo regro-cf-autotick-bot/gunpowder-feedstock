@@ -1,5 +1,5 @@
 {% set name = "gunpowder" %}
-{% set version = "1.2.2" %}
+{% set version = "1.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/gunpowder-{{ version }}.tar.gz
-  sha256: d5f2f6400393a1ed94408bfd15175c70a38c0db39059defa70e8397b52639981
+  sha256: 19e35f667451800f774f4ffc5a52fa16e5c730bfa7fc0fd808e1004fed83752e
 
 build:
   noarch: python
@@ -20,13 +20,19 @@ requirements:
     - python >=3.7
   run:
     - augment-nd
+    - funlib.geometry
     - h5py
+    - networkx
     - numpy
+    - protobuf
     - python >=3.7
+    - pytorch
     - requests
     - scikit-image
     - scipy
+    - tensorflow
     - tqdm
+    - zarr
 
 test:
   imports:
@@ -38,10 +44,11 @@ test:
     - pip
 
 about:
-  home: https://github.com/funkey/gunpowder
+  home: https://pypi.org/project/gunpowder
   summary: A library to facilitate machine learning on large, multi-dimensional images..
   license: MIT
   license_file: LICENSE.txt
+  dev_url: https://github.com/funkey/gunpowder
 
 extra:
   recipe-maintainers:
