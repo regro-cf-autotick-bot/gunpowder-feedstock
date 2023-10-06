@@ -1,5 +1,5 @@
 {% set name = "gunpowder" %}
-{% set version = "1.3.0" %}
+{% set version = "1.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/gunpowder-{{ version }}.tar.gz
-  sha256: 19e35f667451800f774f4ffc5a52fa16e5c730bfa7fc0fd808e1004fed83752e
+  sha256: 3c90cdb4b460ef04bea1285526063072b2ed3d55561bf29083323de96dd5a7b7
 
 build:
   noarch: python
