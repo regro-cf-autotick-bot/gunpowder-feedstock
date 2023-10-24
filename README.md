@@ -3,11 +3,13 @@ About gunpowder-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/gunpowder-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/funkey/gunpowder
+Home: https://pypi.org/project/gunpowder
 
 Package license: MIT
 
 Summary: A library to facilitate machine learning on large, multi-dimensional images..
+
+Development: https://github.com/funkey/gunpowder
 
 Current build status
 ====================
